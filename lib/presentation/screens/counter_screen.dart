@@ -23,7 +23,10 @@ class _CounterScreenState extends State<CounterScreen> {
               clickCounter.toString(),
               style: TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
             ),
-            Text('Clicks', style: TextStyle(fontSize: 25)),
+            Text(
+              'Click${clickCounter == 1 ? '' : 's'}',
+              style: TextStyle(fontSize: 25),
+            ),
           ],
         ),
       ),
